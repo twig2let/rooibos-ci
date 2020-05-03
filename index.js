@@ -1,9 +1,9 @@
 const net = require("net");
 
 const defaultConfig = {
-  // Continue attempting to connect to the Rooibos server every 30 seconds
+  // Attempt to connect to the Rooibos server for 30 seconds only
   timeout: 30000,
-  // Attempt to connect to Rooibos server every 3 seconds. Configurable?
+  // Retry connection to Rooibos server every 3 seconds. Configurable?
   retryInterval: 3000,
   // When true, print each individual test result as receieved else only print the final result
   verbose: true,
